@@ -15,7 +15,7 @@ function alterarBotao() {
   } else if (i == 2) {
     imgForma.setAttribute("src", "assets/img/gif/luffy-gear third.gif");
     imgForma.setAttribute("alt", "Gear third");
-    nameForma.innerHTML = "Gear third";
+    nameForma.innerHTML = "Gear Third";
   } else if (i == 3) {
     imgForma.setAttribute("src", "assets/img/gif/gear four.gif");
     imgForma.setAttribute("alt", "Gear Four");

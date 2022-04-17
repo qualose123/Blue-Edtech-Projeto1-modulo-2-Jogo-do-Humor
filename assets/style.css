@@ -15,16 +15,31 @@
         transform: translateY(-10px);
     }
     } 
-    
 
+ /* @media(min-width:412px) and (min-height:914px){
+     button#transformar{
+         position: absolute;
+         bottom: 50px;
+         
+     }
+ } */
 
-body{
-    background:url(./img/teste1.jpg) ;
+ 
+
+html{
+    background:url(./img/teste1.jpg) no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;  
     background-size: cover;
-    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
+
 div#titulo{
-    margin-left: 500px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 } h1{
   text-align: center;
 
@@ -43,13 +58,12 @@ button#transformar{
     animation: bounce 1.5s;
     
 }
-
-
 img.base{
     display: block;
     justify-content: center;
-    width: 600px;
+    width: 50vw;
     border-radius: 30px;
+    border: 20px;
 }
 
 div.formas{
@@ -64,4 +78,20 @@ figcaption#evoluir{
     font-size: 30px;
     justify-content: center;
     
+}
+
+footer{
+   display: flex;
+    position: absolute;
+    bottom: -120px;
+    width: 100%;
+    justify-content: center;
+    font-family: "ONE PIECE";
+    font-size: 20px;
+    font-size: x-large;
+}
+footer a{
+    color: black;
+    display: flex;
+   
 }
