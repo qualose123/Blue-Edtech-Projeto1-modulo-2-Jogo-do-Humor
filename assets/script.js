@@ -1,11 +1,15 @@
+/*Aki Foi selecionado a imagem inicial, o botão para troca de imagens e a descrição da imagem inicial*/
 let imgForma = document.querySelector(".base");
 let nameForma = document.querySelector("#evoluir");
 let botao = document.querySelector("#transformar");
+
+/*Criação da variável Contadora e o console.dir para checar as propriedades*/
 
 let i = 0;
 
 console.dir(imgForma.setAttribute);
 
+/*Função para alterar para a próxima imagem e descrição e alterar o botão de "Transformar" para "Retroceder", ao atingir a transformação máxima de Luffy*/
 function alterarBotao() {
   i++;
   if (i == 1) {
@@ -24,7 +28,7 @@ function alterarBotao() {
     imgForma.setAttribute("src", "assets/img/gif/snakeman.gif");
     imgForma.setAttribute("alt", "Gear Four snakeman");
     nameForma.innerHTML = "Gear Four Snakeman";
-    botao.textContent="Retroceder";
+    botao.textContent = "Retroceder";
   }
 
   if (i > 4) {
@@ -33,6 +37,6 @@ function alterarBotao() {
     imgForma.setAttribute("src", "./assets/img/forma base.jpg");
     imgForma.setAttribute("alt", "Forma Base");
     nameForma.innerHTML = "Forma Base";
-    botao.textContent="Transformar";
+    botao.textContent = "Transformar";
   }
 }
